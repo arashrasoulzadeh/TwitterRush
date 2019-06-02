@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <% include ../partials/header.ejs %>
+  </head>
+
+  <body>
+
+    <% include ../partials/nav.ejs %>
+
+
+    <div class="container">
+
+
+      <form action="/check" method="post">
+        <img src="<%= user.profile_image_url_https %>" />
+        <%= user.name %>
+        <input type="hidden" name="id" value="<%= user.name %>">
+        <button class="btn btn-normal">This is me!</button>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+  </body>
+
+</html>
